@@ -1,0 +1,13 @@
+<div class="restaurant_card">
+<% @restaurants.each do |restaurant| %>
+<% url = "" %>
+  <img src="https://source.unsplash.com/200x200/?#{<%= restaurant.category %>}food">
+  <div class="restaurant_card_info">
+    <h2><%= link_to "#{restaurant.name}", restaurant_path(restaurant) %></h2>
+    <p><%= restaurant.category %></p>
+  </div>
+<% end %>
+
+</div>
+<p><%= link_to "Add a restaurant", new_restaurant_path %></p>
+

@@ -1,0 +1,22 @@
+// Import page-specific CSS files here.
+@import "home";
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  background-color: pink;
+}
+
+.restaurant_card {
+  width: 400px;
+  display: flex;
+  box-shadow: 4px 4px lightgrey;
+  padding: 10px;
+}
+
+.restaurant_card_info {
+
+}

@@ -1,0 +1,12 @@
+<h3><%= @restaurant.name %></h3>
+<div>Category : <%= @restaurant.category%></div>
+<div>Address: <%= @restaurant.address%></div>
+<div>Contact: <%= @restaurant.phone_number%></div>
+
+<%= link_to "Back to list" , restaurants_path %>
+<%= link_to "Edit restaurant" , edit_restaurant_path %>
+<%= link_to "Redact a review" , new_restaurant_review_path(@restaurant) %>
+<%= link_to "Destroy restaurant" , restaurant_path(@restaurant),
+method: :delete, data: {confirm: "Seriously nigga?"} %>
+
+
